@@ -6,6 +6,36 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+main {
+  background-color: black;
+  height: 90vh;
+}
+
+.home {
+  text-align: center;
+  background-image: url("../public/header.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 75% auto;
+}
+
+.home h1 {
+  color: white;
+  padding-top: 50px;
+  font-size: 3em;
+}
+
+.home h2 {
+  color: gray;
+  padding-top: 10px;
+  font-size: 1.5em;
+}
+
+.home .imgInvert {
+  margin-top: 50px;
+  filter: invert(1);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +43,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 0px 0px 0px 50px;
 }
