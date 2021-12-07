@@ -9,7 +9,7 @@ const useGetApodImageService = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.nasa.gov/planetary/apod?start_date=2021-12-01&end_date=2021-12-07&api_key=jk68o3jngastjwQ0A8duQ0XO8koK4rkcHafAWIUE"
+      "https://api.nasa.gov/planetary/apod?start_date=2021-12-01&end_date=2021-12-06&api_key=jk68o3jngastjwQ0A8duQ0XO8koK4rkcHafAWIUE"
     )
       .then((response) => response.json())
       .then((response) => setResult({ status: "loaded", payload: response }))

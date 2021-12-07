@@ -16,7 +16,7 @@ main {
   background-image: url("../public/header.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 60% auto;
+  background-size: 50% auto;
 }
 
 .home h1 {

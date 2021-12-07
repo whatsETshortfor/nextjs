@@ -1,5 +1,6 @@
 import { Carousel, CarouselItem } from "react-bootstrap";
 import ApodImage from "../types/ApodImage";
+import ModalMessage from "./ModalMessage";
 
 const ApodCarousel: React.FC<ApodImage[]> = ({ apodImages }) => {
   return (
@@ -11,8 +12,14 @@ const ApodCarousel: React.FC<ApodImage[]> = ({ apodImages }) => {
             <Carousel.Caption>
               <h3>{image.title}</h3>
               <p>
-                <small>{image.explanation.substring(0, 200)}...</small>
+                <small>
+                  {image.date} | &copy;{image.copyright}
+                </small>
               </p>
+              <ModalMessage
+                titleToShow={image.title}
+                messageToShow={image.explanation}
+              />
             </Carousel.Caption>
           </CarouselItem>
         ))}
