@@ -1,18 +1,16 @@
 import Link from "next/link";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
 
 export default function Footer() {
   return (
     <footer>
       <Navbar fixed="bottom" bg="light" variant="light">
-        <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto">
-            <Link href="/">
-              With thanks to NASA for doing all the hard work
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
+        <Container className="container_center">
+          <Navbar.Text>
+            With special thanks to NASA for doing all the cool space stuff
+          </Navbar.Text>
+        </Container>
       </Navbar>
     </footer>
   );

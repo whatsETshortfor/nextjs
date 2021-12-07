@@ -16,7 +16,7 @@ main {
   background-image: url("../public/header.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 75% auto;
+  background-size: 60% auto;
 }
 
 .home h1 {
@@ -49,4 +49,27 @@ a {
   color: black;
   text-decoration: none;
   padding: 0px 0px 0px 50px;
+}
+
+.container_center * {
+  margin: 0 auto 0 auto;
+}
+
+.carousel {
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+
+.carousel img {
+  width: auto;
+  height: 500px;
+  object-fit: contain;
+  max-height: 100vh;
+}
+
+.carousel-inner {
+  padding-bottom: 200px;
+}
+.carousel-caption {
+  bottom: -170px;
 }

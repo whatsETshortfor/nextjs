@@ -13,7 +13,7 @@ export function Layout(props: LayoutProps) {
         <div>
           <Header />
         </div>
-        <div>{props.children}</div>
+        <div className="darktheme">{props.children}</div>
         <div>
           <Footer />
         </div>
