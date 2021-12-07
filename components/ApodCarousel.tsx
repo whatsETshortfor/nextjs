@@ -2,7 +2,7 @@ import { Carousel, CarouselItem } from "react-bootstrap";
 import ApodImage from "../types/ApodImage";
 import ModalMessage from "./ModalMessage";
 
-const ApodCarousel: React.FC<ApodImage[]> = ({ apodImages }) => {
+function ApodCarousel({ apodImages }: { apodImages: ApodImage[] }) {
   return (
     <div>
       <Carousel>
@@ -26,6 +26,6 @@ const ApodCarousel: React.FC<ApodImage[]> = ({ apodImages }) => {
       </Carousel>
     </div>
   );
-};
+}
 
 export default ApodCarousel;
