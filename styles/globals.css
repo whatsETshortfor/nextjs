@@ -95,3 +95,7 @@ a {
   padding-top: 250px;
   text-align: center;
 }
+
+.navbar {
+  border-top: 1px solid black;
+}

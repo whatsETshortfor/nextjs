@@ -19,7 +19,6 @@ export default function Header() {
           </Navbar.Brand>
           <Nav className="me-auto">
             <Link href="/apod">today`s picture</Link>
-            <Link href="/rovers">rovers</Link>
             <Link href="/earth">earth</Link>
             <Link href="/starwars">Star Wars&trade; planets</Link>
           </Nav>
