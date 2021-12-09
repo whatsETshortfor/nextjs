@@ -1,10 +1,10 @@
 import { NextPage } from "next";
 import { Spinner } from "react-bootstrap";
-import ApodCarousel from "../components/ApodCarousel";
-import fetchApod from "../services/fetchApod";
+import StarWarsPlanets from "../components/StarWarsPlanets";
+import fetchPlanets from "../services/fetchPlanets";
 
-const Apod: NextPage = () => {
-  const service = fetchApod();
+const StarWars: NextPage = () => {
+  const service = fetchPlanets();
 
   return (
     <main>
@@ -15,7 +15,7 @@ const Apod: NextPage = () => {
           </div>
         )}
         {service.status === "loaded" && (
-          <ApodCarousel apodImages={service.payload} />
+          <StarWarsPlanets planets={service.payload} />
         )}
         {service.status === "error" && (
           <div>Error, failed to retrieve the APOD Data</div>
@@ -25,4 +25,4 @@ const Apod: NextPage = () => {
   );
 };
 
-export default Apod;
+export default StarWars;

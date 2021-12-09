@@ -73,3 +73,26 @@ a {
 .carousel-caption {
   bottom: -170px;
 }
+
+.row {
+  background-color: black;
+}
+
+.col {
+  background-color: black;
+}
+
+.card {
+  margin: 10px;
+  margin-right: 0px;
+}
+
+.card .card-header {
+  background-color: honeydew;
+}
+
+.spinner-div {
+  width: 100%;
+  padding-top: 250px;
+  text-align: center;
+}

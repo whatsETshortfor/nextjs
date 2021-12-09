@@ -7,9 +7,7 @@ export default function Footer() {
     <footer>
       <Navbar fixed="bottom" bg="light" variant="light">
         <Container className="container_center">
-          <Navbar.Text>
-            With special thanks to NASA for doing all the cool space stuff
-          </Navbar.Text>
+          <Navbar.Text>May E.T. be with you... always.</Navbar.Text>
         </Container>
       </Navbar>
     </footer>

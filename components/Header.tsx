@@ -21,6 +21,7 @@ export default function Header() {
             <Link href="/apod">today`s picture</Link>
             <Link href="/rovers">rovers</Link>
             <Link href="/earth">earth</Link>
+            <Link href="/starwars">Star Wars&trade; planets</Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
