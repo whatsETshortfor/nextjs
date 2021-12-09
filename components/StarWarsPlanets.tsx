@@ -7,6 +7,7 @@ import {
   ListGroup,
   ListGroupItem,
 } from "react-bootstrap";
+import ModalMessage from "./ModalMessage";
 
 function StarWarsPlanets({ planets }: { planets: Resource<IPlanet>[] }) {
   return (
@@ -58,7 +59,19 @@ function StarWarsPlanets({ planets }: { planets: Resource<IPlanet>[] }) {
                       <ListGroup className="list-group-flush">
                         {planet.value.residents.map((resident, c) => (
                           <ListGroupItem key={c}>
-                            {(resident as IPeople).name}
+                            <ModalMessage
+                              buttonText={(resident as IPeople).name}
+                              titleToShow={(resident as IPeople).name}
+                              messageToShow={
+                                "Gender: " +
+                                (resident as IPeople).gender +
+                                " | Birth Year: " +
+                                (resident as IPeople).birth_year +
+                                " | Height: " +
+                                (resident as IPeople).height +
+                                "cm"
+                              }
+                            />
                           </ListGroupItem>
                         ))}
                       </ListGroup>
@@ -76,7 +89,18 @@ function StarWarsPlanets({ planets }: { planets: Resource<IPlanet>[] }) {
                       <ListGroup className="list-group-flush">
                         {planet.value.films.map((film, q) => (
                           <ListGroupItem key={q}>
-                            {(film as IFilm).title}
+                            <ModalMessage
+                              buttonText={(film as IFilm).title}
+                              titleToShow={(film as IFilm).title}
+                              messageToShow={
+                                "Director: " +
+                                (film as IFilm).director +
+                                " | Opening Crawl: " +
+                                (film as IFilm).opening_crawl +
+                                " | Release Date: " +
+                                (film as IFilm).release_date
+                              }
+                            />
                           </ListGroupItem>
                         ))}
                       </ListGroup>

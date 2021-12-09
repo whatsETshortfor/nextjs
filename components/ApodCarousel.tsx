@@ -17,6 +17,7 @@ function ApodCarousel({ apodImages }: { apodImages: ApodImage[] }) {
                 </small>
               </p>
               <ModalMessage
+                buttonText="Show full description"
                 titleToShow={image.title}
                 messageToShow={image.explanation}
               />

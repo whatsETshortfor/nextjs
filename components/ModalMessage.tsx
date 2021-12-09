@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 
 type ModalMessageProps = {
+  buttonText: string;
   titleToShow: string;
   messageToShow: string;
 };
@@ -16,7 +17,7 @@ export default function ModalMessage(props: ModalMessageProps) {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        View full description
+        {props.buttonText}
       </Button>
 
       <Modal

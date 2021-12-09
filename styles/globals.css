@@ -83,8 +83,7 @@ a {
 }
 
 .card {
-  margin: 10px;
-  margin-right: 0px;
+  margin: 10px 10px 10px 10px;
 }
 
 .card .card-header {
