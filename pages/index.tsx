@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { InputText } from "../components/InputText";
 import Image from "react-bootstrap/Image";
 
 export default function Home() {
